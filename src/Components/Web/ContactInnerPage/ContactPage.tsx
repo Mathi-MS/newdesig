@@ -56,10 +56,10 @@ export const ContactPage = () => {
     if (!formRef.current) return;
     try {
       await emailjs.sendForm(
-         "service_esxx3n2",
-        "template_8j6eqo1",
+         "service",
+        "template",
         formRef.current,
-        "j0ZYBw2nraPLfCMAv"
+        "public"
       );
       showSuccess("Message Send SuccessFully, We will contact you soon");
       setLoading(false)
