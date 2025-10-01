@@ -6,7 +6,11 @@ export const MobileDevelopmentContent = () => {
     <>
       <section
         className="service-details-section"
-        style={{ background: "var(--black-body-color)" }}
+        style={{
+          background: "var(--black-body-color)",
+          padding: "60px 0px",
+          position: "relative",
+        }}
       >
         <div className="container service-container w-container">
           <div
@@ -37,6 +41,7 @@ export const MobileDevelopmentContent = () => {
                   lineHeight: "1.6",
                   fontFamily: "Syne",
                   textAlign: "start",
+                  color: "var(--navy)",
                 }}
               >
                 We create innovative mobile applications that deliver
@@ -65,6 +70,7 @@ export const MobileDevelopmentContent = () => {
                       padding: "20px",
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
+                      background: "var(--black-body-color)",
                     }}
                   >
                     <h3
@@ -72,6 +78,7 @@ export const MobileDevelopmentContent = () => {
                         fontSize: "20px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
+                        color: "var(--coral-primary-color)",
                       }}
                     >
                       Native iOS Development
@@ -81,6 +88,7 @@ export const MobileDevelopmentContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color: "var(--navy)",
                       }}
                     >
                       High-performance iOS apps built with Swift and Objective-C
@@ -92,6 +100,7 @@ export const MobileDevelopmentContent = () => {
                       padding: "20px",
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
+                      background: "var(--black-body-color)",
                     }}
                   >
                     <h3
@@ -99,6 +108,7 @@ export const MobileDevelopmentContent = () => {
                         fontSize: "20px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
+                        color: "var(--coral-primary-color)",
                       }}
                     >
                       Native Android Development
@@ -108,6 +118,7 @@ export const MobileDevelopmentContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color: "var(--navy)",
                       }}
                     >
                       Robust Android applications using Kotlin and Java with
@@ -127,6 +138,7 @@ export const MobileDevelopmentContent = () => {
                       padding: "20px",
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
+                      background: "var(--black-body-color)",
                     }}
                   >
                     <h3
@@ -134,6 +146,7 @@ export const MobileDevelopmentContent = () => {
                         fontSize: "20px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
+                        color: "var(--coral-primary-color)",
                       }}
                     >
                       Cross-Platform Development
@@ -143,6 +156,7 @@ export const MobileDevelopmentContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color: "var(--navy)",
                       }}
                     >
                       Cost-effective solutions using React Native and Flutter
@@ -154,6 +168,7 @@ export const MobileDevelopmentContent = () => {
                       padding: "20px",
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
+                      background: "var(--black-body-color)",
                     }}
                   >
                     <h3
@@ -161,6 +176,7 @@ export const MobileDevelopmentContent = () => {
                         fontSize: "20px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
+                        color: "var(--coral-primary-color)",
                       }}
                     >
                       Progressive Web Apps
@@ -170,6 +186,7 @@ export const MobileDevelopmentContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color: "var(--navy)",
                       }}
                     >
                       Web-based applications that provide native app-like
@@ -189,6 +206,7 @@ export const MobileDevelopmentContent = () => {
                       padding: "20px",
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
+                      background: "var(--black-body-color)",
                     }}
                   >
                     <h3
@@ -196,6 +214,7 @@ export const MobileDevelopmentContent = () => {
                         fontSize: "20px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
+                        color: "var(--coral-primary-color)",
                       }}
                     >
                       UI/UX Design for Mobile
@@ -205,6 +224,7 @@ export const MobileDevelopmentContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color: "var(--navy)",
                       }}
                     >
                       Intuitive and engaging mobile interfaces designed for
@@ -216,6 +236,7 @@ export const MobileDevelopmentContent = () => {
                       padding: "20px",
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
+                      background: "var(--black-body-color)",
                     }}
                   >
                     <h3
@@ -223,6 +244,7 @@ export const MobileDevelopmentContent = () => {
                         fontSize: "20px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
+                        color: "var(--coral-primary-color)",
                       }}
                     >
                       App Store Optimization
@@ -232,6 +254,7 @@ export const MobileDevelopmentContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color: "var(--navy)",
                       }}
                     >
                       Complete app deployment and optimization for App Store and
@@ -243,11 +266,16 @@ export const MobileDevelopmentContent = () => {
             </div>
           </div>
         </div>
+        <div className="line-design-wrapper">
+          <div className="single-line"></div>
+          <div className="single-line"></div>
+          <div className="single-line"></div>
+        </div>
       </section>
 
       <section
         className="fun-fact-section"
-        style={{ backgroundColor: "var(--black-body-color)", padding: "0px" }}
+        style={{ backgroundColor: "var(--navy)", padding: "60px 0" }}
       >
         <div className="container service-container w-container">
           <div className="fun-fact-wrapper-block">
@@ -258,7 +286,7 @@ export const MobileDevelopmentContent = () => {
               <div className="section-intro-text">Why Choose Us</div>
               <h2
                 className="section-title small-title"
-                style={{ textAlign: "start" }}
+                style={{ textAlign: "start", color: "white" }}
               >
                 Why Choose Our Mobile Development Services
               </h2>
@@ -635,11 +663,14 @@ export const MobileDevelopmentContent = () => {
       <section
         className="process-section"
         style={{
-          backgroundColor: "var(--black-body-color)",
-          padding: "80px 0",
+          position: "relative",
+          padding: "60px 0px",
         }}
       >
-        <div className="container service-container w-container">
+        <div
+          className="container service-container w-container"
+          style={{ position: "relative", zIndex: 2 }}
+        >
           <div
             className="section-title-block"
             style={{ textAlign: "center", marginBottom: "60px" }}
@@ -656,7 +687,7 @@ export const MobileDevelopmentContent = () => {
               gap: "40px",
             }}
           >
-            <div style={{ textAlign: "center", padding: "30px 20px" }}>
+            <div style={{ textAlign: "center", padding: "30px 20px",background:"var(--black-body-color)" }}>
               <div
                 style={{
                   width: "80px",
@@ -679,6 +710,7 @@ export const MobileDevelopmentContent = () => {
                   fontSize: "20px",
                   marginBottom: "15px",
                   fontFamily: "Syne",
+                  color:"var(--coral-primary-color)",
                 }}
               >
                 Discovery & Planning
@@ -688,13 +720,14 @@ export const MobileDevelopmentContent = () => {
                   fontSize: "14px",
                   lineHeight: "1.6",
                   fontFamily: "Syne",
+                  color:"var(--navy)",
                 }}
               >
                 We analyze your requirements, target audience, and business
                 goals to create a comprehensive development strategy.
               </p>
             </div>
-            <div style={{ textAlign: "center", padding: "30px 20px" }}>
+            <div style={{ textAlign: "center", padding: "30px 20px",background:"var(--black-body-color)" }}>
               <div
                 style={{
                   width: "80px",
@@ -717,6 +750,7 @@ export const MobileDevelopmentContent = () => {
                   fontSize: "20px",
                   marginBottom: "15px",
                   fontFamily: "Syne",
+                  color:"var(--coral-primary-color)",
                 }}
               >
                 UI/UX Design
@@ -726,13 +760,14 @@ export const MobileDevelopmentContent = () => {
                   fontSize: "14px",
                   lineHeight: "1.6",
                   fontFamily: "Syne",
+                  color:"var(--navy)",
                 }}
               >
                 Our designers create intuitive wireframes and stunning visual
                 designs that enhance user engagement.
               </p>
             </div>
-            <div style={{ textAlign: "center", padding: "30px 20px" }}>
+            <div style={{ textAlign: "center", padding: "30px 20px",background:"var(--black-body-color)" }}>
               <div
                 style={{
                   width: "80px",
@@ -755,6 +790,7 @@ export const MobileDevelopmentContent = () => {
                   fontSize: "20px",
                   marginBottom: "15px",
                   fontFamily: "Syne",
+                  color:"var(--coral-primary-color)",
                 }}
               >
                 Development
@@ -764,13 +800,14 @@ export const MobileDevelopmentContent = () => {
                   fontSize: "14px",
                   lineHeight: "1.6",
                   fontFamily: "Syne",
+                  color:"var(--navy)",
                 }}
               >
                 Our skilled developers bring your app to life using the latest
                 technologies and best practices.
               </p>
             </div>
-            <div style={{ textAlign: "center", padding: "30px 20px" }}>
+            <div style={{ textAlign: "center", padding: "30px 20px",background:"var(--black-body-color)" }}>
               <div
                 style={{
                   width: "80px",
@@ -793,6 +830,7 @@ export const MobileDevelopmentContent = () => {
                   fontSize: "20px",
                   marginBottom: "15px",
                   fontFamily: "Syne",
+                  color:"var(--coral-primary-color)",
                 }}
               >
                 Testing & QA
@@ -802,13 +840,14 @@ export const MobileDevelopmentContent = () => {
                   fontSize: "14px",
                   lineHeight: "1.6",
                   fontFamily: "Syne",
+                  color:"var(--navy)",
                 }}
               >
                 Comprehensive testing across multiple devices and platforms to
                 ensure optimal performance and user experience.
               </p>
             </div>
-            <div style={{ textAlign: "center", padding: "30px 20px" }}>
+            <div style={{ textAlign: "center", padding: "30px 20px",background:"var(--black-body-color)" }}>
               <div
                 style={{
                   width: "80px",
@@ -831,6 +870,7 @@ export const MobileDevelopmentContent = () => {
                   fontSize: "20px",
                   marginBottom: "15px",
                   fontFamily: "Syne",
+                  color:"var(--coral-primary-color)",
                 }}
               >
                 Deployment
@@ -840,13 +880,14 @@ export const MobileDevelopmentContent = () => {
                   fontSize: "14px",
                   lineHeight: "1.6",
                   fontFamily: "Syne",
+                  color:"var(--navy)",
                 }}
               >
                 We handle the complete app store submission process and ensure
                 successful deployment to App Store and Google Play.
               </p>
             </div>
-            <div style={{ textAlign: "center", padding: "30px 20px" }}>
+            <div style={{ textAlign: "center", padding: "30px 20px",background:"var(--black-body-color)" }}>
               <div
                 style={{
                   width: "80px",
@@ -869,6 +910,7 @@ export const MobileDevelopmentContent = () => {
                   fontSize: "20px",
                   marginBottom: "15px",
                   fontFamily: "Syne",
+                  color:"var(--coral-primary-color)",
                 }}
               >
                 Support & Maintenance
@@ -878,6 +920,7 @@ export const MobileDevelopmentContent = () => {
                   fontSize: "14px",
                   lineHeight: "1.6",
                   fontFamily: "Syne",
+                  color:"var(--navy)",
                 }}
               >
                 Ongoing support, updates, and feature enhancements to keep your
@@ -885,6 +928,11 @@ export const MobileDevelopmentContent = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="line-design-wrapper">
+          <div className="single-line"></div>
+          <div className="single-line"></div>
+          <div className="single-line"></div>
         </div>
       </section>
 

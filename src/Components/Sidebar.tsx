@@ -75,7 +75,7 @@ export const Sidebar = () => {
         >
           <span style={{ color: "var(--black-body-color)" }}>Design</span>{" "}
           <br />
-          Dynastry
+          Dynasty
         </Box>
       </Box>
 

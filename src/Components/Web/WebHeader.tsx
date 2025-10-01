@@ -11,6 +11,8 @@ import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
+import { images } from "../../assets/Images/Images";
+import { color } from "framer-motion";
 export const WebHeader = () => {
   const location = useLocation();
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
@@ -57,7 +59,7 @@ export const WebHeader = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      setIsScrolled(scrollTop > 100); 
+      setIsScrolled(scrollTop > 100);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -87,10 +89,20 @@ export const WebHeader = () => {
                   fontSize: "30px",
                   lineHeight: "20px",
                   textAlign: "center",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "10px",
                 }}
               >
-                <span style={{ color: "var(--white)" }}>Design</span> <br />
-                Dynastry
+                <Box
+                  component={"img"}
+                  src={images.whiteLogo}
+                  sx={{ width: "30px", objectFit: "contain" }}
+                ></Box>
+                <Box>
+                  <span style={{ color: "var(--white)" }}>Design</span> <br />
+                  Dynasty
+                </Box>
               </Link>
               <nav role="navigation" className="nav-menu-wrapper w-nav-menu">
                 <ul role="list" className="nav-menu w-list-unstyled">
@@ -201,6 +213,7 @@ export const WebHeader = () => {
                         <Link
                           to="/web-development"
                           className="dropdown-link w-dropdown-link"
+                          style={{ color: "var(--navy)" }}
                           onClick={() => setIsServicesDropdownOpen(false)}
                         >
                           Web Developement
@@ -208,6 +221,7 @@ export const WebHeader = () => {
                         <Link
                           to="/mobile-developement"
                           className="dropdown-link w-dropdown-link"
+                          style={{ color: "var(--navy)" }}
                           onClick={() => setIsServicesDropdownOpen(false)}
                         >
                           Mobile Developement
@@ -215,6 +229,7 @@ export const WebHeader = () => {
                         <Link
                           to="/graphic-design"
                           className="dropdown-link w-dropdown-link"
+                          style={{ color: "var(--navy)" }}
                           onClick={() => setIsServicesDropdownOpen(false)}
                         >
                           Graphic Design
@@ -222,7 +237,7 @@ export const WebHeader = () => {
                       </nav>
                     </div>
                   </li>
-                  <li className="list-item">
+                  {/* <li className="list-item">
                     <Link to="/pricing" style={{ textDecoration: "none" }}>
                       <Box
                         className="dropdown-toggle w-dropdown-toggle"
@@ -247,7 +262,7 @@ export const WebHeader = () => {
                         </div>
                       </Box>
                     </Link>
-                  </li>
+                  </li> */}
                   <li className="list-item">
                     <Link to="/contact" style={{ textDecoration: "none" }}>
                       <Box
@@ -325,7 +340,7 @@ export const WebHeader = () => {
             backgroundColor: "#fff",
             boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
           },
-          zIndex:"999999999"
+          zIndex: "999999999",
         }}
       >
         <Box sx={{ p: 2, borderBottom: "1px solid #eee" }}>
@@ -348,7 +363,7 @@ export const WebHeader = () => {
             >
               <span style={{ color: "var(--text-primary)" }}>Design</span>{" "}
               <br />
-              Dynastry
+              Dynasty
             </Link>
             <CloseIcon
               onClick={() => setIsMobileMenuOpen(false)}
@@ -357,7 +372,7 @@ export const WebHeader = () => {
           </Box>
         </Box>
 
-        <List sx={{ pt: 0, }}>
+        <List sx={{ pt: 0 }}>
           <ListItem
             component={Link}
             to="/"
@@ -510,7 +525,7 @@ export const WebHeader = () => {
             </List>
           </Collapse>
 
-          <ListItem
+          {/* <ListItem
             component={Link}
             to="/pricing"
             onClick={() => setIsMobileMenuOpen(false)}
@@ -533,7 +548,7 @@ export const WebHeader = () => {
                 },
               }}
             />
-          </ListItem>
+          </ListItem> */}
 
           <ListItem
             component={Link}

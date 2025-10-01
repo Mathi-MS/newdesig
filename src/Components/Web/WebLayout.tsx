@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import { WebFooter } from "./WebFooter";
 import { ScrollToTop } from "../ScrollToTop";
 import { WhatsAppFloat } from "./WhatsAppFloat";
+import { WebChatBot } from "../WebChatBot";
 
 export const WebLayout = () => {
   return (
@@ -13,6 +14,7 @@ export const WebLayout = () => {
       <Outlet />
       <WebFooter />
       <WhatsAppFloat />
+      <WebChatBot />
     </Box>
   );
 };

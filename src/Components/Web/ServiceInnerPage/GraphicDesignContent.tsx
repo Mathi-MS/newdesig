@@ -6,7 +6,11 @@ export const GraphicDesignContent = () => {
     <>
       <section
         className="service-details-section"
-        style={{ background: "var(--black-body-color)" }}
+        style={{
+          background: "var(--black-body-color)",
+          padding: "60px 0px",
+          position: "relative",
+        }}
       >
         <div className="container service-container w-container">
           <div
@@ -37,6 +41,7 @@ export const GraphicDesignContent = () => {
                   lineHeight: "1.6",
                   fontFamily: "Syne",
                   textAlign: "start",
+                  color: "var(--navy)",
                 }}
               >
                 We offer comprehensive graphic design services that bring your
@@ -65,6 +70,7 @@ export const GraphicDesignContent = () => {
                       padding: "20px",
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
+                      background:"var(--black-body-color)"
                     }}
                   >
                     <h3
@@ -72,33 +78,7 @@ export const GraphicDesignContent = () => {
                         fontSize: "20px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
-                      }}
-                    >
-                      Brand Identity Design
-                    </h3>
-                    <p
-                      style={{
-                        fontSize: "14px",
-                        lineHeight: "1.5",
-                        fontFamily: "Syne",
-                      }}
-                    >
-                      Complete brand identity packages including logos, color
-                      schemes, and brand guidelines.
-                    </p>
-                  </div>
-                  <div
-                    style={{
-                      padding: "20px",
-                      border: "1px solid #e0e0e0",
-                      borderRadius: "10px",
-                    }}
-                  >
-                    <h3
-                      style={{
-                        fontSize: "20px",
-                        marginBottom: "10px",
-                        fontFamily: "Syne",
+                        color:"var(--coral-primary-color)"
                       }}
                     >
                       Print Design
@@ -108,10 +88,41 @@ export const GraphicDesignContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color:"var(--navy)"
                       }}
                     >
                       Business cards, brochures, flyers, posters, and other
                       print materials with professional quality.
+                    </p>
+                  </div>
+                  <div
+                    style={{
+                      padding: "20px",
+                      border: "1px solid #e0e0e0",
+                      borderRadius: "10px",
+                      background:"var(--black-body-color)"
+                    }}
+                  >
+                    <h3
+                      style={{
+                        fontSize: "20px",
+                        marginBottom: "10px",
+                        fontFamily: "Syne",
+                        color:"var(--coral-primary-color)"
+                      }}
+                    >
+                      UI/UX Design
+                    </h3>
+                    <p
+                      style={{
+                        fontSize: "14px",
+                        lineHeight: "1.5",
+                        fontFamily: "Syne",
+                        color:"var(--navy)"
+                      }}
+                    >
+                      User interface and experience design for websites, mobile
+                      apps, and digital platforms.
                     </p>
                   </div>
                 </Box>
@@ -127,6 +138,7 @@ export const GraphicDesignContent = () => {
                       padding: "20px",
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
+                      background:"var(--black-body-color)"
                     }}
                   >
                     <h3
@@ -134,6 +146,7 @@ export const GraphicDesignContent = () => {
                         fontSize: "20px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
+                        color:"var(--coral-primary-color)"
                       }}
                     >
                       Digital Graphics
@@ -143,6 +156,7 @@ export const GraphicDesignContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color:"var(--navy)"
                       }}
                     >
                       Social media graphics, web banners, digital ads, and
@@ -154,6 +168,7 @@ export const GraphicDesignContent = () => {
                       padding: "20px",
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
+                      background:"var(--black-body-color)"
                     }}
                   >
                     <h3
@@ -161,6 +176,7 @@ export const GraphicDesignContent = () => {
                         fontSize: "20px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
+                        color:"var(--coral-primary-color)"
                       }}
                     >
                       Packaging Design
@@ -170,6 +186,7 @@ export const GraphicDesignContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color:"var(--navy)"
                       }}
                     >
                       Eye-catching product packaging that stands out on shelves
@@ -177,77 +194,20 @@ export const GraphicDesignContent = () => {
                     </p>
                   </div>
                 </Box>
-                <Box
-                  sx={{
-                    display: "flex",
-                    gap: "30px",
-                    "@media (max-width: 600px)": { flexDirection: "column" },
-                  }}
-                >
-                  <div
-                    style={{
-                      padding: "20px",
-                      border: "1px solid #e0e0e0",
-                      borderRadius: "10px",
-                    }}
-                  >
-                    <h3
-                      style={{
-                        fontSize: "20px",
-                        marginBottom: "10px",
-                        fontFamily: "Syne",
-                      }}
-                    >
-                      Illustration & Icons
-                    </h3>
-                    <p
-                      style={{
-                        fontSize: "14px",
-                        lineHeight: "1.5",
-                        fontFamily: "Syne",
-                      }}
-                    >
-                      Custom illustrations, icons, and graphic elements tailored
-                      to your brand and message.
-                    </p>
-                  </div>
-                  <div
-                    style={{
-                      padding: "20px",
-                      border: "1px solid #e0e0e0",
-                      borderRadius: "10px",
-                    }}
-                  >
-                    <h3
-                      style={{
-                        fontSize: "20px",
-                        marginBottom: "10px",
-                        fontFamily: "Syne",
-                      }}
-                    >
-                      UI/UX Design
-                    </h3>
-                    <p
-                      style={{
-                        fontSize: "14px",
-                        lineHeight: "1.5",
-                        fontFamily: "Syne",
-                      }}
-                    >
-                      User interface and experience design for websites, mobile
-                      apps, and digital platforms.
-                    </p>
-                  </div>
-                </Box>
               </div>
             </div>
           </div>
+        </div>
+        <div className="line-design-wrapper">
+          <div className="single-line"></div>
+          <div className="single-line"></div>
+          <div className="single-line"></div>
         </div>
       </section>
 
       <section
         className="fun-fact-section"
-        style={{ backgroundColor: "var(--black-body-color)", padding: "0px" }}
+        style={{  backgroundColor: "var(--navy)", padding: "60px 0"  }}
       >
         <div className="container service-container w-container">
           <div className="fun-fact-wrapper-block">
@@ -258,7 +218,7 @@ export const GraphicDesignContent = () => {
               <div className="section-intro-text">Why Choose Us</div>
               <h2
                 className="section-title small-title"
-                style={{ textAlign: "start" }}
+                style={{ textAlign: "start",color:"white" }}
               >
                 Why Choose Our Graphic Design Services
               </h2>
@@ -647,8 +607,9 @@ export const GraphicDesignContent = () => {
       <section
         className="process-section"
         style={{
-          backgroundColor: "var(--black-body-color)",
-          padding: "80px 0",
+          
+          padding: "60px 0",
+          position: "relative",
         }}
       >
         <div className="container service-container w-container">
@@ -668,7 +629,7 @@ export const GraphicDesignContent = () => {
               gap: "40px",
             }}
           >
-            <div style={{ textAlign: "center" }}>
+            <div style={{ textAlign: "center",backgroundColor:"var(--black-body-color)" }}>
               <div
                 style={{
                   width: "80px",
@@ -691,6 +652,7 @@ export const GraphicDesignContent = () => {
                   fontSize: "20px",
                   marginBottom: "15px",
                   fontFamily: "Syne",
+                  color:"var(--coral-primary-color)"
                 }}
               >
                 Discovery & Research
@@ -700,13 +662,14 @@ export const GraphicDesignContent = () => {
                   fontSize: "14px",
                   lineHeight: "1.6",
                   fontFamily: "Syne",
+                  color:"var(--navy)"
                 }}
               >
                 We start by understanding your brand, target audience, and
                 project goals through detailed consultation.
               </p>
             </div>
-            <div style={{ textAlign: "center" }}>
+            <div style={{ textAlign: "center",backgroundColor:"var(--black-body-color)" }}>
               <div
                 style={{
                   width: "80px",
@@ -729,6 +692,7 @@ export const GraphicDesignContent = () => {
                   fontSize: "20px",
                   marginBottom: "15px",
                   fontFamily: "Syne",
+                  color:"var(--coral-primary-color)"
                 }}
               >
                 Concept Development
@@ -738,13 +702,14 @@ export const GraphicDesignContent = () => {
                   fontSize: "14px",
                   lineHeight: "1.6",
                   fontFamily: "Syne",
+                  color:"var(--navy)"
                 }}
               >
                 Our team brainstorms and develops initial concepts and design
                 directions based on your requirements.
               </p>
             </div>
-            <div style={{ textAlign: "center" }}>
+            <div style={{ textAlign: "center",backgroundColor:"var(--black-body-color)" }}>
               <div
                 style={{
                   width: "80px",
@@ -767,6 +732,7 @@ export const GraphicDesignContent = () => {
                   fontSize: "20px",
                   marginBottom: "15px",
                   fontFamily: "Syne",
+                  color:"var(--coral-primary-color)"
                 }}
               >
                 Design & Creation
@@ -776,13 +742,14 @@ export const GraphicDesignContent = () => {
                   fontSize: "14px",
                   lineHeight: "1.6",
                   fontFamily: "Syne",
+                  color:"var(--navy)"
                 }}
               >
                 We create detailed designs using industry-standard tools and
                 techniques to bring your vision to life.
               </p>
             </div>
-            <div style={{ textAlign: "center" }}>
+            <div style={{ textAlign: "center",backgroundColor:"var(--black-body-color)" }}>
               <div
                 style={{
                   width: "80px",
@@ -805,6 +772,7 @@ export const GraphicDesignContent = () => {
                   fontSize: "20px",
                   marginBottom: "15px",
                   fontFamily: "Syne",
+                  color:"var(--coral-primary-color)"
                 }}
               >
                 Review & Refinement
@@ -814,6 +782,7 @@ export const GraphicDesignContent = () => {
                   fontSize: "14px",
                   lineHeight: "1.6",
                   fontFamily: "Syne",
+                  color:"var(--navy)"
                 }}
               >
                 We present the designs for your feedback and make revisions
@@ -821,6 +790,11 @@ export const GraphicDesignContent = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="line-design-wrapper">
+          <div className="single-line"></div>
+          <div className="single-line"></div>
+          <div className="single-line"></div>
         </div>
       </section>
 

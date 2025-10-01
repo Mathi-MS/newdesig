@@ -3,12 +3,15 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { commonWord } from "../../../assets/CommonWord";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import { showError, showSuccess } from "../../../Custom/CustomToast";
 
 export const ContactPage = () => {
+  const location = useLocation();
+  console.log(location);
+
   const schema = z.object({
     name: z
       .string()
@@ -18,10 +21,7 @@ export const ContactPage = () => {
     email: z.string().email("Invalid email address").trim(),
     phone: z
       .string()
-      .regex(
-        /^[0-9+\-\s()]+$/,
-        "Invalid phone number format"
-      )
+      .regex(/^[0-9+\-\s()]+$/, "Invalid phone number format")
       .min(6, "Phone must be at least 6 digits")
       .max(20, "Phone must be at most 20 digits")
       .trim(),
@@ -39,7 +39,6 @@ export const ContactPage = () => {
   });
 
   type FormData = z.infer<typeof schema>;
-
   const {
     register,
     handleSubmit,
@@ -48,36 +47,42 @@ export const ContactPage = () => {
   } = useForm<FormData>({
     resolver: zodResolver(schema),
   });
-  const [loading,setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
 
   const onSubmit = async (data: FormData) => {
-    setLoading(true)
+    setLoading(true);
     if (!formRef.current) return;
     try {
       await emailjs.sendForm(
-         "service",
-        "template",
+        "service_81eynuk",
+        "designdyansty-mail",
         formRef.current,
-        "public"
+        "jV-zfYIMPWGP_wD_c"
       );
       showSuccess("Message Send SuccessFully, We will contact you soon");
-      setLoading(false)
+      setLoading(false);
       reset();
     } catch (err) {
       console.error(err);
       showError("Failed to send message");
-      setLoading(false)
-    }
-    finally {
-      setLoading(false)
+      setLoading(false);
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <>
-      <InnerPageBanner />
-      <section className="contact-page-section">
+      {location.pathname === "/contact" && (
+        <>
+          <InnerPageBanner />
+        </>
+      )}
+      <section
+        className="contact-page-section"
+        style={{ position: "relative" }}
+      >
         <div className="container service-container w-container">
           <div className="section-title-center"></div>
           <div className="contact-page-wrapper">
@@ -270,6 +275,7 @@ export const ContactPage = () => {
                           <input
                             className="form-field w-input"
                             placeholder="Your Name :"
+                            style={{ color: "#888" }}
                             type="text"
                             id="Name"
                             {...register("name")}
@@ -284,6 +290,7 @@ export const ContactPage = () => {
                           <input
                             className="form-field w-input"
                             placeholder="Email :"
+                            style={{ color: "#888" }}
                             type="email"
                             id="Email"
                             {...register("email")}
@@ -306,6 +313,7 @@ export const ContactPage = () => {
                           <input
                             className="form-field w-input"
                             placeholder="Phone :"
+                            style={{ color: "#888" }}
                             type="tel"
                             id="Phone"
                             {...register("phone")}
@@ -319,6 +327,7 @@ export const ContactPage = () => {
                         <div className="single-form-block">
                           <input
                             className="form-field w-input"
+                            style={{ color: "#888" }}
                             placeholder="Company :"
                             type="text"
                             id="Company"
@@ -336,14 +345,18 @@ export const ContactPage = () => {
                         <select
                           className="form-field w-input"
                           id="Service"
+                          style={{ color: "#888" }}
                           {...register("service")}
                         >
                           <option value="">Select Service</option>
                           <option value="web development">
                             Web Development
                           </option>
-                          <option value="mobile development">Mobile Developement</option>
+                          <option value="mobile development">
+                            Mobile Developement
+                          </option>
                           <option value="graphic design">Graphic Design</option>
+                          <option value="Consultation">Consultation</option>
                         </select>
                         {errors.service && (
                           <span className="error-message">
@@ -355,6 +368,7 @@ export const ContactPage = () => {
                         <textarea
                           placeholder="Project Details :"
                           id="projectDetails"
+                          style={{ color: "#888" }}
                           className="form-field textarea w-input"
                           {...register("projectDetails")}
                         ></textarea>
@@ -399,7 +413,24 @@ export const ContactPage = () => {
             </div>
           </div>
         </div>
+        <div className="line-design-wrapper">
+          <div className="single-line"></div>
+          <div className="single-line"></div>
+          <div className="single-line"></div>
+        </div>
       </section>
+      {location.pathname === "/contact" && (
+        <>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.1741630093647!2d-86.31634472529237!3d39.98221308197296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88135440e6c375bb%3A0x64c8c024606d6f1d!2s8197%20Peggy%20Ct%2C%20Zionsville%2C%20IN%2046077%2C%20USA!5e0!3m2!1sen!2sin!4v1756655175444!5m2!1sen!2sin"
+            width="100%"
+            height="400px"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </>
+      )}
     </>
   );
 };

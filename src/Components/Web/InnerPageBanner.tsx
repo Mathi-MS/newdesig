@@ -1,4 +1,5 @@
-import { useLocation } from "react-router-dom";
+import { Box } from "@mui/material";
+import { Link, useLocation } from "react-router-dom";
 
 export const InnerPageBanner = () => {
   const location = useLocation();
@@ -51,7 +52,9 @@ export const InnerPageBanner = () => {
 
   return (
     <>
-      <section className="breadcrumb-section">
+      <section className="breadcrumb-section" style={{position: "relative"}}>
+        <div className="backgroundHero"> </div>
+
         <div className="w-layout-blockcontainer container w-container">
           <div className="breadcrumb-wrapper">
             <div className="breadcrumb-title-block">
@@ -75,6 +78,22 @@ export const InnerPageBanner = () => {
                   </span>
                 )}
               </h1>
+              {location.pathname !== "/contact" && (
+                <>
+                  <Link to="/contact">
+                    <Box
+                      sx={{
+                        padding: "15px 25px",
+                        border: "solid 1px var(--coral-primary-color)",
+                        ":hover": { color: "var(--coral-primary-color)" },
+                      }}
+                      className="button-primary"
+                    >
+                      Get a Free Consultation
+                    </Box>
+                  </Link>
+                </>
+              )}
             </div>
           </div>
         </div>

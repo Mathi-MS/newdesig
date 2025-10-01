@@ -123,7 +123,7 @@ export const Header = ({ onMenuClick }: HeaderProps) => {
                 Design
               </span>{" "}
               <br />
-              Dynastry
+              Dynasty
             </Typography>
           </Box>
         </Box>

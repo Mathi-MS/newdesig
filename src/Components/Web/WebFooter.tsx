@@ -1,9 +1,10 @@
-import { Box, Typography,Link } from "@mui/material";
+import { Box, Typography, Link } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { commonWord } from "../../assets/CommonWord";
+import { images } from "../../assets/Images/Images";
 
 export const WebFooter = () => {
   const currentYear = new Date().getFullYear();
@@ -16,18 +17,26 @@ export const WebFooter = () => {
             <div className="footer-logo-content">
               <RouterLink
                 to="/"
+                className="navbar-brand w-nav-brand w--current"
                 style={{
-                  textDecoration: "none",
                   color: "var(--coral-primary-color)",
                   fontSize: "30px",
                   lineHeight: "20px",
-                  textAlign: "left",
-                  fontFamily: "Syne, sans-serif",
-                  fontWeight: "bold",
+                  textAlign: "center",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "10px",
                 }}
               >
-                <span style={{ color: "var(--white)" }}>Design</span> <br />
-                Dynastry
+                <Box
+                  component={"img"}
+                  src={images.whiteLogo}
+                  sx={{ width: "30px", objectFit: "contain" }}
+                ></Box>
+                <Box>
+                  <span style={{ color: "var(--white)" }}>Design</span> <br />
+                  Dynasty
+                </Box>
               </RouterLink>
               <Typography
                 className="footer-logo-title"
@@ -116,13 +125,13 @@ export const WebFooter = () => {
                 >
                   About Us
                 </Link>
-                <Link
+                {/* <Link
                   component={RouterLink}
                   to="/pricing"
                   className="footer-link"
                 >
                   Pricing
-                </Link>
+                </Link> */}
                 <Link
                   component={RouterLink}
                   to="/contact"

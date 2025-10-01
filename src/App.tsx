@@ -3,8 +3,9 @@ import { ReactQueryProvider } from "./Hooks/ReactQueryProvider";
 import "./index.css";
 import routes from "./Routes/Routes";
 import { RouterProvider } from "react-router-dom";
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import LoaderSplash from "./Components/LoaderSplash";
+import { SmoothCursor } from "./Components/SmoothCursor";
 
 const App = () => {
   const [showSplash, setShowSplash] = useState(true);
@@ -21,6 +22,7 @@ const App = () => {
         {showSplash ? <LoaderSplash /> : <RouterProvider router={routes} />}
       </ReactQueryProvider>
       <CustomToast />
+      <SmoothCursor />
     </>
   );
 };

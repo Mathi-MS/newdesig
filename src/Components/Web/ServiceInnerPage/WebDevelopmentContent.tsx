@@ -6,7 +6,7 @@ export const WebDevelopmentContent = () => {
     <>
       <section
         className="service-details-section"
-        style={{ background: "var(--black-body-color)" }}
+        style={{ background: "var(--black-body-color)", padding: "60px 0px",position:"relative" }}
       >
         <div className="container service-container w-container">
           <div
@@ -37,6 +37,7 @@ export const WebDevelopmentContent = () => {
                   lineHeight: "1.6",
                   fontFamily: "Syne",
                   textAlign: "start",
+                  color: "var(--navy)",
                 }}
               >
                 We offer comprehensive web development services tailored to meet
@@ -65,6 +66,7 @@ export const WebDevelopmentContent = () => {
                       padding: "20px",
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
+                      background: "var(--black-body-color)",
                     }}
                   >
                     <h3
@@ -72,6 +74,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "20px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
+                        color: "var(--coral-primary-color)",
                       }}
                     >
                       Custom Website Development
@@ -81,6 +84,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color: "var(--navy)",
                       }}
                     >
                       Bespoke websites built with modern frameworks and
@@ -92,6 +96,7 @@ export const WebDevelopmentContent = () => {
                       padding: "20px",
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
+                      background: "var(--black-body-color)",
                     }}
                   >
                     <h3
@@ -99,6 +104,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "20px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
+                        color: "var(--coral-primary-color)",
                       }}
                     >
                       E-commerce Solutions
@@ -108,6 +114,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color: "var(--navy)",
                       }}
                     >
                       Full-featured online stores with secure payment gateways
@@ -127,6 +134,7 @@ export const WebDevelopmentContent = () => {
                       padding: "20px",
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
+                      background: "var(--black-body-color)",
                     }}
                   >
                     <h3
@@ -134,6 +142,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "20px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
+                        color: "var(--coral-primary-color)",
                       }}
                     >
                       Web Application Development
@@ -143,6 +152,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color: "var(--navy)",
                       }}
                     >
                       Complex web applications with advanced functionality and
@@ -154,6 +164,7 @@ export const WebDevelopmentContent = () => {
                       padding: "20px",
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
+                      background: "var(--black-body-color)",
                     }}
                   >
                     <h3
@@ -161,6 +172,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "20px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
+                        color: "var(--coral-primary-color)",
                       }}
                     >
                       CMS Development
@@ -170,6 +182,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color: "var(--navy)",
                       }}
                     >
                       Content Management Systems for easy website updates and
@@ -189,6 +202,7 @@ export const WebDevelopmentContent = () => {
                       padding: "20px",
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
+                      background: "var(--black-body-color)",
                     }}
                   >
                     <h3
@@ -196,6 +210,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "20px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
+                        color: "var(--coral-primary-color)",
                       }}
                     >
                       API Integration
@@ -205,6 +220,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color: "var(--navy)",
                       }}
                     >
                       Seamless integration with third-party services and APIs.
@@ -215,6 +231,7 @@ export const WebDevelopmentContent = () => {
                       padding: "20px",
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
+                      background: "var(--black-body-color)",
                     }}
                   >
                     <h3
@@ -222,6 +239,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "20px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
+                        color: "var(--coral-primary-color)",
                       }}
                     >
                       Website Maintenance
@@ -231,6 +249,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color: "var(--navy)",
                       }}
                     >
                       Ongoing support, updates, and performance optimization.
@@ -241,11 +260,16 @@ export const WebDevelopmentContent = () => {
             </div>
           </div>
         </div>
+        <div className="line-design-wrapper">
+          <div className="single-line"></div>
+          <div className="single-line"></div>
+          <div className="single-line"></div>
+        </div>
       </section>
 
       <section
         className="fun-fact-section"
-        style={{ backgroundColor: "var(--black-body-color)", padding: "0px" }}
+        style={{ backgroundColor: "var(--navy)", padding: "60px 0" }}
       >
         <div className="container service-container w-container">
           <div className="fun-fact-wrapper-block">
@@ -256,7 +280,7 @@ export const WebDevelopmentContent = () => {
               <div className="section-intro-text">Why Choose Us</div>
               <h2
                 className="section-title small-title"
-                style={{ textAlign: "start" }}
+                style={{ textAlign: "start", color: "white" }}
               >
                 Why Choose Our Web Development Services
               </h2>
@@ -492,9 +516,16 @@ export const WebDevelopmentContent = () => {
 
       <section
         className="service-details-section"
-        style={{ background: "var(--black-body-color)" }}
+        style={{
+          background: "var(--black-body-color)",
+          position: "relative",
+          padding: "60px 0px",
+        }}
       >
-        <div className="container service-container w-container">
+        <div
+          className="container service-container w-container"
+          style={{ position: "relative", zIndex: 2 }}
+        >
           <Box
             className="service-details-wrapper"
             sx={{ display: "flex", flexDirection: "column" }}
@@ -530,6 +561,7 @@ export const WebDevelopmentContent = () => {
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
                       position: "relative",
+                      backgroundColor: "var(--black-body-color)",
                     }}
                   >
                     <div
@@ -555,6 +587,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "18px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
+                        color: "var(--coral-primary-color)",
                       }}
                     >
                       Discovery & Planning
@@ -564,6 +597,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color: "var(--navy)",
                       }}
                     >
                       We start by understanding your requirements, target
@@ -578,6 +612,7 @@ export const WebDevelopmentContent = () => {
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
                       position: "relative",
+                      backgroundColor: "var(--black-body-color)",
                     }}
                   >
                     <div
@@ -603,6 +638,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "18px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
+                        color: "var(--coral-primary-color)",
                       }}
                     >
                       Design & Prototyping
@@ -612,6 +648,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color: "var(--navy)",
                       }}
                     >
                       Our designers create wireframes and prototypes to
@@ -634,6 +671,7 @@ export const WebDevelopmentContent = () => {
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
                       position: "relative",
+                      backgroundColor: "var(--black-body-color)",
                     }}
                   >
                     <div
@@ -659,6 +697,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "18px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
+                        color: "var(--coral-primary-color)",
                       }}
                     >
                       Development
@@ -668,6 +707,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color: "var(--navy)",
                       }}
                     >
                       Using modern technologies and best practices, our
@@ -681,6 +721,7 @@ export const WebDevelopmentContent = () => {
                       border: "1px solid #e0e0e0",
                       borderRadius: "10px",
                       position: "relative",
+                      backgroundColor: "var(--black-body-color)",
                     }}
                   >
                     <div
@@ -706,6 +747,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "18px",
                         marginBottom: "10px",
                         fontFamily: "Syne",
+                        color: "var(--coral-primary-color)",
                       }}
                     >
                       Testing & Quality Assurance
@@ -715,6 +757,7 @@ export const WebDevelopmentContent = () => {
                         fontSize: "14px",
                         lineHeight: "1.5",
                         fontFamily: "Syne",
+                        color: "var(--navy)",
                       }}
                     >
                       Rigorous testing across multiple devices and browsers
@@ -729,6 +772,7 @@ export const WebDevelopmentContent = () => {
                     border: "1px solid #e0e0e0",
                     borderRadius: "10px",
                     position: "relative",
+                    backgroundColor: "var(--black-body-color)",
                   }}
                 >
                   <div
@@ -754,6 +798,7 @@ export const WebDevelopmentContent = () => {
                       fontSize: "18px",
                       marginBottom: "10px",
                       fontFamily: "Syne",
+                      color: "var(--coral-primary-color)",
                     }}
                   >
                     Launch & Optimization
@@ -763,6 +808,7 @@ export const WebDevelopmentContent = () => {
                       fontSize: "14px",
                       lineHeight: "1.5",
                       fontFamily: "Syne",
+                      color: "var(--navy)",
                     }}
                   >
                     We launch your website and provide ongoing optimization to
@@ -772,6 +818,11 @@ export const WebDevelopmentContent = () => {
               </div>
             </div>
           </Box>
+        </div>
+        <div className="line-design-wrapper">
+          <div className="single-line"></div>
+          <div className="single-line"></div>
+          <div className="single-line"></div>
         </div>
       </section>
       <WebContact />

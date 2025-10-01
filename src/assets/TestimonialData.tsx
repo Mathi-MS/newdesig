@@ -8,35 +8,44 @@ export interface TestimonialType {
 
 export const testimonialData: TestimonialType[] = [
   {
-    id: 1,
-    name: "Nicole Rodrigues",
-    role: "CEO & CO Founder",
     review:
-      "Lorem Ipsum is simply dummy text of the printing typese industry. Lorem Ipsum hasIt is a long est fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that.",
+      "Design Dynasty completely transformed our outdated website into a modern, user-friendly platform. The team understood our vision and delivered beyond expectations. Our traffic and customer inquiries have doubled since launch",
+    name: "Sandra Burton",
+    role: "Business Owner.",
+    id:1,
     rating: 5,
   },
   {
-    id: 2,
-    name: "John Smith",
-    role: "Marketing Director",
     review:
-      "Working with Design Dynasty has been an incredible experience. Their attention to detail and creative approach exceeded our expectations. The team delivered exceptional results on time and within budget.",
+      "Professional, responsive, and detail-oriented – Design Dynasty handled everything from design to deployment flawlessly. They are our go-to partner for all things web",
+    name: "Emily Rodriguez",
+    role: "Founder, Marketing Manager",
+    id:2,
     rating: 5,
   },
   {
-    id: 3,
-    name: "Sarah Johnson",
-    role: "Product Manager",
     review:
-      "The design team at Design Dynasty transformed our vision into reality. Their professional approach and innovative solutions helped us achieve our business goals. Highly recommended for any design project.",
+      "Our nonprofit organization needed a website with donation management and event features. Design Dynasty delivered a clean and functional site that made it easy for donors and members to engage with us",
+    name: "Sarah L",
+    role: "Nonprofit Director",
+    id:3,
     rating: 5,
   },
   {
-    id: 4,
-    name: "Michael Brown",
+    review:
+      "I loved how the team patiently walked me through every step of the process. They made sure the website reflected my brand identity perfectly. Highly recommend Design Dynasty for anyone starting fresh online.",
+    name: "Rohit S",
     role: "Startup Founder",
-    review:
-      "Design Dynasty provided outstanding service from start to finish. Their expertise in modern design trends and user experience made our product stand out in the market. Excellent communication throughout the project.",
+    id:4,
     rating: 4,
   },
+  {
+    review:
+      "Design Dynasty built a school management mobile app for us, and it has been a game-changer. Teachers, parents, and students now communicate effortlessly, and managing schedules has never been easier.",
+    name: "Priya",
+    role: "M., School Principal",
+    id:5,
+    rating: 5,
+  },
 ];
+

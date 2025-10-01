@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { commonWord } from "../../../assets/CommonWord";
 import { images } from "../../../assets/Images/Images";
+import { Box } from "@mui/material";
 
 export const AboutTop = () => {
   const [openItems, setOpenItems] = useState({
@@ -28,50 +29,31 @@ export const AboutTop = () => {
 
   return (
     <>
-      <section className="fun-fact-section">
+      <section className="fun-fact-section" style={{backgroundColor: "var(--black-body-color)"}}>
         <div className="container service-container w-container">
           <div className="fun-fact-wrapper-block">
             <div className="fun-fact-inner-block">
               <h2
                 className="fun-fact-title about-responsive"
-                style={{ fontSize: "30px" }}
+                style={{ fontSize: "30px",color: "var(--navy)" }}
               >
-                Empowering businesses with innovative technology solutions since
-                <span style={{ color: "var(--coral-primary-color)" }}>
+                Empowering businesses with innovative technology solutions .
+                
+                We're more than a <span style={{ color: "var(--coral-primary-color)" }}>
                   {" "}
-                  {commonWord.startYear}
-                </span>{" "}
-                We're more than a service provider - we're your technology
+                  service provider
+                </span>{" "}  - we're your technology
                 partners.
               </h2>
             </div>
             <div className="fun-fact-divider"></div>
-            <div className="fun-fact-counter-block">
-              <div className="all-archive-block fun-fact">
-                <div className="single-archive">
-                  <h3 className="archive-title fun-fact">
-                    {" "}
-                    {new Date().getFullYear() - commonWord.startYear}+
-                  </h3>
-                  <div className="archive-summary home-three">
-                    Years of Excellence
-                  </div>
-                </div>
-                <div className="divider-high home-three"></div>
-                <div className="single-archive">
-                  <h3 className="archive-title fun-fact">98%</h3>
-                  <div className="archive-summary home-three">
-                    Client Satisfaction
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
       <section
-        data-w-id="57914c1b-ed0c-f7ec-4dd8-3d071be8c268"
         className="faq-section"
+                style={{ backgroundColor: "var(--navy)",}}
+
       >
         <div className="faq-container container service-container w-container">
           <div className="faq-container-inner">
@@ -88,7 +70,7 @@ export const AboutTop = () => {
               <div className="faq-content-inner">
                 <div className="section-title-block max-w-620">
                   <div className="section-intro-text">FAQ’s</div>
-                  <h2 className="section-title small-title">Our Answers</h2>
+                  <h2 className="section-title small-title" style={{color:"var(--white)"}}>Our Answers</h2>
                 </div>
                 <div className="faq-content-block">
                   <div className="contact-us-info-block">
@@ -530,10 +512,15 @@ export const AboutTop = () => {
         </div>
       </section>
       <section>
-        <div className="container service-container w-container">
+        <Box className="container service-container w-container" sx={{
+          marginTop: "80px",
+          "@media (max-width: 768px)": { marginTop: "60px","& .about-responsive-para":{
+            marginBottom:"20px !important"
+          } }
+        }}>
           <h2
             className="fun-fact-title about-responsive"
-            style={{ fontSize: "30px", textAlign: "center", marginTop: "20px" }}
+            style={{ fontSize: "30px", textAlign: "center",color:"var(--coral-primary-color)" }}
           >
             Our Mission & Vision
           </h2>
@@ -544,6 +531,7 @@ export const AboutTop = () => {
               textAlign: "center",
               marginBottom: "80px",
               paddingTop: "25px",
+              color:"var(--navy)",
             }}
           >
             To deliver cutting-edge IT solutions that transform businesses and
@@ -551,7 +539,7 @@ export const AboutTop = () => {
             challenges and create opportunities for our clients to thrive in the
             digital age.
           </h2>
-        </div>
+        </Box>
       </section>
       <section
         className="vision-mission-section"
@@ -571,6 +559,7 @@ export const AboutTop = () => {
                     fontFamily: "Syne",
                     opacity: ".8",
                     fontSize: "16px",
+                    color: "var(--navy)",
                   }}
                 >
                   We strive for perfection in every project, delivering
@@ -586,6 +575,7 @@ export const AboutTop = () => {
                     fontFamily: "Syne",
                     opacity: ".8",
                     fontSize: "16px",
+                    color: "var(--navy)",
                   }}
                 >
                   We constantly explore new technologies and approaches to
@@ -600,6 +590,7 @@ export const AboutTop = () => {
                     fontFamily: "Syne",
                     opacity: ".8",
                     fontSize: "16px",
+                    color: "var(--navy)",
                   }}
                 >
                   We work closely with our clients as partners, ensuring
@@ -615,6 +606,7 @@ export const AboutTop = () => {
                     fontFamily: "Syne",
                     opacity: ".8",
                     fontSize: "16px",
+                    color: "var(--navy)",
                   }}
                 >
                   Every project is executed with meticulous attention to detail
@@ -629,6 +621,7 @@ export const AboutTop = () => {
                     fontFamily: "Syne",
                     opacity: ".8",
                     fontSize: "16px",
+                    color: "var(--navy)",
                   }}
                 >
                   Our clients trust us to deliver on time, within budget, and
@@ -643,6 +636,7 @@ export const AboutTop = () => {
                     fontFamily: "Syne",
                     opacity: ".8",
                     fontSize: "16px",
+                    color: "var(--navy)",
                   }}
                 >
                   Transparency, honesty, and ethical practices guide all our

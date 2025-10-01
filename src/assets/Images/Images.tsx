@@ -15,6 +15,7 @@ import testi from "./testi.avif"
 import contacticon from "./contacticon.svg"
 import vision from "./vision.jpg"
 import faq from "./faq.jpg"
+import whiteLogo from "./whitelogo.png"
 export const images = {
   favicon: favicon,
   timeouGif: timeouGif,
@@ -33,4 +34,5 @@ export const images = {
   contacticon:contacticon,
   faq:faq,
   vision:vision,
+  whiteLogo:whiteLogo,
 };

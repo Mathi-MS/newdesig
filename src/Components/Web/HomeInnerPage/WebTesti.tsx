@@ -39,15 +39,6 @@ export const WebTesti = () => {
               />
             </div>
             <div className="testimonial-image-content-wrapper">
-              <div className="testimonial-image-content-block">
-                <h3 className="testimonial-image-content-title">
-                  {" "}
-                  {new Date().getFullYear() - commonWord.startYear}+
-                </h3>
-                <h5 className="testimonial-image-content-text">
-                  Years of Experience
-                </h5>
-              </div>
               <div className="testimonial-image-content-block block-two">
                 <h3 className="testimonial-image-content-title">98+</h3>
                 <h5 className="testimonial-image-content-text">
@@ -61,7 +52,7 @@ export const WebTesti = () => {
             style={{ width: "100%" }}
           >
             <div className="section-title-block testimonial">
-              <h2 className="section-title">What Our Clients Say</h2>
+              <h2 className="section-title" style={{color:"white"}}>What Our Clients Say</h2>
             </div>
             <div className="testimonial-slider-wrapper testi-block-one">
               <div style={{ position: "relative", overflow: "hidden" }}>

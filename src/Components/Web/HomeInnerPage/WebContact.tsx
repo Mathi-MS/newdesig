@@ -28,7 +28,7 @@ export const WebContact = () => {
   };
 
   return (
-    <section id="Contact-Section" className="contract-section">
+    <section id="Contact-Section" className="contract-section" style={{position: "relative",background:"var(--navy)"}}>
       <div className="container service-container w-container">
         <div className="contract-wrapper">
           <h2 className="contact-title stoke-text">Let’s Discuss</h2>
@@ -49,11 +49,7 @@ export const WebContact = () => {
           </Link>
         </div>
       </div>
-      <div className="line-design-wrapper">
-        <div className="single-line"></div>
-        <div className="single-line"></div>
-        <div className="single-line"></div>
-      </div>
+      
     </section>
   );
 };

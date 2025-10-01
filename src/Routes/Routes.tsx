@@ -36,10 +36,10 @@ const routes = createHashRouter([
         path: "/contact",
         element: <ContactPage />,
       },
-      {
-        path: "/pricing",
-        element: <PricingPage />,
-      },
+      // {
+      //   path: "/pricing",
+      //   element: <PricingPage />,
+      // },
       {
         path: "/web-development",
         element: <WebDevelopemt />,
