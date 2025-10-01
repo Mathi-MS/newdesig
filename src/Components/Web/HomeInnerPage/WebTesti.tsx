@@ -27,7 +27,7 @@ export const WebTesti = () => {
   return (
     <section className="testimonial-section">
       <div className="container service-container w-container">
-        <div className="testimonial-wrapper">
+        <div className="testimonial-wrapper" data-aos="fade-up">
           <div className="testimonial-image-block">
             <div className="image-hover-effect overflow-hidden">
               <img
@@ -49,7 +49,7 @@ export const WebTesti = () => {
           </div>
           <div
             className="testimonial-content-block-one"
-            style={{ width: "100%" }}
+            style={{ width: "100%" }} 
           >
             <div className="section-title-block testimonial">
               <h2 className="section-title" style={{color:"white"}}>What Our Clients Say</h2>

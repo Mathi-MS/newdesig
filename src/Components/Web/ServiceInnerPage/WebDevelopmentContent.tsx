@@ -11,7 +11,7 @@ export const WebDevelopmentContent = () => {
         <div className="container service-container w-container">
           <div
             className="service-details-wrapper"
-            style={{ flexDirection: "column", gap: "10px" }}
+            style={{ flexDirection: "column", gap: "10px" }} data-aos="fade-up"
           >
             <div className="section-title-block">
               <div
@@ -68,6 +68,7 @@ export const WebDevelopmentContent = () => {
                       borderRadius: "10px",
                       background: "var(--black-body-color)",
                     }}
+                    data-aos="fade-right"
                   >
                     <h3
                       style={{
@@ -98,6 +99,7 @@ export const WebDevelopmentContent = () => {
                       borderRadius: "10px",
                       background: "var(--black-body-color)",
                     }}
+                     data-aos="fade-left"
                   >
                     <h3
                       style={{
@@ -136,6 +138,7 @@ export const WebDevelopmentContent = () => {
                       borderRadius: "10px",
                       background: "var(--black-body-color)",
                     }}
+                     data-aos="fade-right"
                   >
                     <h3
                       style={{
@@ -166,6 +169,7 @@ export const WebDevelopmentContent = () => {
                       borderRadius: "10px",
                       background: "var(--black-body-color)",
                     }}
+                     data-aos="fade-right"
                   >
                     <h3
                       style={{
@@ -204,6 +208,7 @@ export const WebDevelopmentContent = () => {
                       borderRadius: "10px",
                       background: "var(--black-body-color)",
                     }}
+                     data-aos="fade-right"
                   >
                     <h3
                       style={{
@@ -233,6 +238,7 @@ export const WebDevelopmentContent = () => {
                       borderRadius: "10px",
                       background: "var(--black-body-color)",
                     }}
+                     data-aos="fade-left"
                   >
                     <h3
                       style={{
@@ -272,7 +278,7 @@ export const WebDevelopmentContent = () => {
         style={{ backgroundColor: "var(--navy)", padding: "60px 0" }}
       >
         <div className="container service-container w-container">
-          <div className="fun-fact-wrapper-block">
+          <div className="fun-fact-wrapper-block"  data-aos="fade-left">
             <div
               className="section-title-block "
               style={{ textAlign: "start", marginBottom: "0px" }}
@@ -529,8 +535,9 @@ export const WebDevelopmentContent = () => {
           <Box
             className="service-details-wrapper"
             sx={{ display: "flex", flexDirection: "column" }}
+            
           >
-            <div className="section-title-block ">
+            <div className="section-title-block " data-aos="fade-left" >
               <div className="section-intro-text">Our Process</div>
               <h2 className="section-title small-title">
                 Our Development Process
@@ -539,6 +546,7 @@ export const WebDevelopmentContent = () => {
             <div
               className="service-details-content"
               style={{ maxWidth: "unset !important" }}
+              data-aos="fade-left"
             >
               <div
                 style={{
@@ -563,6 +571,7 @@ export const WebDevelopmentContent = () => {
                       position: "relative",
                       backgroundColor: "var(--black-body-color)",
                     }}
+                    
                   >
                     <div
                       style={{

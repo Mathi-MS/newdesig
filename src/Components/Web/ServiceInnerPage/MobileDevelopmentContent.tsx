@@ -17,7 +17,7 @@ export const MobileDevelopmentContent = () => {
             className="service-details-wrapper"
             style={{ flexDirection: "column", gap: "10px" }}
           >
-            <div className="section-title-block">
+            <div className="section-title-block" data-aos="fade-up">
               <div
                 className="section-intro-text"
                 style={{ textAlign: "start" }}
@@ -43,6 +43,7 @@ export const MobileDevelopmentContent = () => {
                   textAlign: "start",
                   color: "var(--navy)",
                 }}
+                data-aos="fade-up"
               >
                 We create innovative mobile applications that deliver
                 exceptional user experiences across all platforms. Our mobile
@@ -65,7 +66,7 @@ export const MobileDevelopmentContent = () => {
                     "@media (max-width: 600px)": { flexDirection: "column" },
                   }}
                 >
-                  <div
+                  <div data-aos="fade-right"
                     style={{
                       padding: "20px",
                       border: "1px solid #e0e0e0",
@@ -95,7 +96,7 @@ export const MobileDevelopmentContent = () => {
                       for optimal user experience.
                     </p>
                   </div>
-                  <div
+                  <div data-aos="fade-left"
                     style={{
                       padding: "20px",
                       border: "1px solid #e0e0e0",
@@ -133,7 +134,7 @@ export const MobileDevelopmentContent = () => {
                     "@media (max-width: 600px)": { flexDirection: "column" },
                   }}
                 >
-                  <div
+                  <div data-aos="fade-right"
                     style={{
                       padding: "20px",
                       border: "1px solid #e0e0e0",
@@ -163,7 +164,7 @@ export const MobileDevelopmentContent = () => {
                       for multiple platforms.
                     </p>
                   </div>
-                  <div
+                  <div data-aos="fade-left"
                     style={{
                       padding: "20px",
                       border: "1px solid #e0e0e0",
@@ -201,7 +202,7 @@ export const MobileDevelopmentContent = () => {
                     "@media (max-width: 600px)": { flexDirection: "column" },
                   }}
                 >
-                  <div
+                  <div data-aos="fade-right"
                     style={{
                       padding: "20px",
                       border: "1px solid #e0e0e0",
@@ -231,7 +232,7 @@ export const MobileDevelopmentContent = () => {
                       optimal user interaction.
                     </p>
                   </div>
-                  <div
+                  <div data-aos="fade-left"
                     style={{
                       padding: "20px",
                       border: "1px solid #e0e0e0",
@@ -279,7 +280,7 @@ export const MobileDevelopmentContent = () => {
       >
         <div className="container service-container w-container">
           <div className="fun-fact-wrapper-block">
-            <div
+            <div data-aos="fade-right"
               className="section-title-block "
               style={{ textAlign: "start", marginBottom: "0px" }}
             >
@@ -291,7 +292,7 @@ export const MobileDevelopmentContent = () => {
                 Why Choose Our Mobile Development Services
               </h2>
             </div>
-            <div
+            <div data-aos="fade-right"
               style={{
                 display: "grid",
                 gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
@@ -671,7 +672,7 @@ export const MobileDevelopmentContent = () => {
           className="container service-container w-container"
           style={{ position: "relative", zIndex: 2 }}
         >
-          <div
+          <div data-aos="fade-right"
             className="section-title-block"
             style={{ textAlign: "center", marginBottom: "60px" }}
           >
@@ -680,7 +681,7 @@ export const MobileDevelopmentContent = () => {
               Mobile App Development Process
             </h2>
           </div>
-          <div
+          <div data-aos="fade-right"
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",

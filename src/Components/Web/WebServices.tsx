@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { images } from "../../assets/Images/Images";
+import AOS from "aos";
 
 export const WebServices = () => {
   const location = useLocation();
@@ -9,13 +10,13 @@ export const WebServices = () => {
         <div className="container service-container w-container">
           <div className="service-section-title-wrapper">
             <div className="section-title-block mw-720px">
-              <div className="section-intro-text">What We Do</div>
-              <h2 className="section-title">
+              <div className="section-intro-text" data-aos="fade-up">What We Do</div>
+              <h2 className="section-title" data-aos="fade-up">
                 We deliver end-to-end digital solutions
               </h2>
             </div>
             {location.pathname === "/services" ? null : (
-              <div className="section-button-block">
+              <div className="section-button-block" data-aos="fade-left">
                 <Link to="/services" className="button-primary">
                   Explore All Services
                 </Link>
@@ -26,7 +27,7 @@ export const WebServices = () => {
             <div className="single-service">
               <div className="service-collection-wrapper w-dyn-list">
                 <div role="list" className="service-list w-dyn-items">
-                  <div role="listitem" className="service-item w-dyn-item">
+                  <div role="listitem" className="service-item w-dyn-item" data-aos="fade-up">
                     <div className="service-content-wrapper">
                       <div className="service-icon-block">
                         <img
@@ -82,7 +83,7 @@ export const WebServices = () => {
             <div className="single-service mt-40px">
               <div className="service-collection-wrapper w-dyn-list">
                 <div role="list" className="service-list w-dyn-items">
-                  <div role="listitem" className="service-item w-dyn-item">
+                  <div role="listitem" className="service-item w-dyn-item" data-aos="fade-up">
                     <div className="service-content-wrapper">
                       <div className="service-icon-block">
                         <img
@@ -138,7 +139,7 @@ export const WebServices = () => {
             <div className="single-service mt-80px none">
               <div className="service-collection-wrapper w-dyn-list">
                 <div role="list" className="service-list w-dyn-items">
-                  <div role="listitem" className="service-item w-dyn-item">
+                  <div role="listitem" className="service-item w-dyn-item" data-aos="fade-up">
                     <div className="service-content-wrapper">
                       <div className="service-icon-block">
                         <img

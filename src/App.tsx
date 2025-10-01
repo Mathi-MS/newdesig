@@ -6,6 +6,7 @@ import { RouterProvider } from "react-router-dom";
 import { useEffect, useState } from "react";
 import LoaderSplash from "./Components/LoaderSplash";
 import { SmoothCursor } from "./Components/SmoothCursor";
+import "aos/dist/aos.css";
 
 const App = () => {
   const [showSplash, setShowSplash] = useState(true);

@@ -13,11 +13,11 @@ export const GraphicDesignContent = () => {
         }}
       >
         <div className="container service-container w-container">
-          <div
+          <div 
             className="service-details-wrapper"
-            style={{ flexDirection: "column", gap: "10px" }}
+            style={{ flexDirection: "column", gap: "10px" }} data-aos="fade-up"
           >
-            <div className="section-title-block">
+            <div className="section-title-block" >
               <div
                 className="section-intro-text"
                 style={{ textAlign: "start" }}
@@ -65,7 +65,7 @@ export const GraphicDesignContent = () => {
                     "@media (max-width: 600px)": { flexDirection: "column" },
                   }}
                 >
-                  <div
+                  <div data-aos="fade-right"
                     style={{
                       padding: "20px",
                       border: "1px solid #e0e0e0",
@@ -95,7 +95,7 @@ export const GraphicDesignContent = () => {
                       print materials with professional quality.
                     </p>
                   </div>
-                  <div
+                  <div data-aos="fade-left"
                     style={{
                       padding: "20px",
                       border: "1px solid #e0e0e0",
@@ -133,7 +133,7 @@ export const GraphicDesignContent = () => {
                     "@media (max-width: 600px)": { flexDirection: "column" },
                   }}
                 >
-                  <div
+                  <div data-aos="fade-right"
                     style={{
                       padding: "20px",
                       border: "1px solid #e0e0e0",
@@ -163,7 +163,7 @@ export const GraphicDesignContent = () => {
                       online marketing materials.
                     </p>
                   </div>
-                  <div
+                  <div data-aos="fade-left"
                     style={{
                       padding: "20px",
                       border: "1px solid #e0e0e0",
@@ -211,7 +211,7 @@ export const GraphicDesignContent = () => {
       >
         <div className="container service-container w-container">
           <div className="fun-fact-wrapper-block">
-            <div
+            <div  data-aos="fade-right"
               className="section-title-block "
               style={{ textAlign: "start", marginBottom: "0px" }}
             >
@@ -228,7 +228,8 @@ export const GraphicDesignContent = () => {
                 display: "grid",
                 gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
                 gap: "30px",
-              }}
+              }} 
+               data-aos="fade-right"
             >
               <div style={{ textAlign: "center", padding: "20px" }}>
                 <div
@@ -615,7 +616,7 @@ export const GraphicDesignContent = () => {
         <div className="container service-container w-container">
           <div
             className="section-title-block"
-            style={{ textAlign: "center", marginBottom: "60px" }}
+            style={{ textAlign: "center", marginBottom: "60px" }} data-aos="fade-right"
           >
             <div className="section-intro-text">Our Process</div>
             <h2 className="section-title small-title">
@@ -628,6 +629,7 @@ export const GraphicDesignContent = () => {
               gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
               gap: "40px",
             }}
+            data-aos="fade-right"
           >
             <div style={{ textAlign: "center",backgroundColor:"var(--black-body-color)" }}>
               <div

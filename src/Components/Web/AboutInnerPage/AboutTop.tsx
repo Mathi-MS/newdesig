@@ -35,7 +35,7 @@ export const AboutTop = () => {
             <div className="fun-fact-inner-block">
               <h2
                 className="fun-fact-title about-responsive"
-                style={{ fontSize: "30px",color: "var(--navy)" }}
+                style={{ fontSize: "30px",color: "var(--navy)" }} data-aos="fade-up"
               >
                 Empowering businesses with innovative technology solutions .
                 
@@ -55,7 +55,7 @@ export const AboutTop = () => {
                 style={{ backgroundColor: "var(--navy)",}}
 
       >
-        <div className="faq-container container service-container w-container">
+        <div className="faq-container container service-container w-container" data-aos="fade-up">
           <div className="faq-container-inner">
             <div className="faq-image-block">
               <img
@@ -69,8 +69,8 @@ export const AboutTop = () => {
             <div className="faq-content-block">
               <div className="faq-content-inner">
                 <div className="section-title-block max-w-620">
-                  <div className="section-intro-text">FAQ’s</div>
-                  <h2 className="section-title small-title" style={{color:"var(--white)"}}>Our Answers</h2>
+                  <div className="section-intro-text" >FAQ’s</div>
+                  <h2 className="section-title small-title" style={{color:"var(--white)"}} >Our Answers</h2>
                 </div>
                 <div className="faq-content-block">
                   <div className="contact-us-info-block">
@@ -520,7 +520,7 @@ export const AboutTop = () => {
         }}>
           <h2
             className="fun-fact-title about-responsive"
-            style={{ fontSize: "30px", textAlign: "center",color:"var(--coral-primary-color)" }}
+            style={{ fontSize: "30px", textAlign: "center",color:"var(--coral-primary-color)" }} data-aos="fade-up"
           >
             Our Mission & Vision
           </h2>
@@ -533,6 +533,7 @@ export const AboutTop = () => {
               paddingTop: "25px",
               color:"var(--navy)",
             }}
+            data-aos="fade-up"
           >
             To deliver cutting-edge IT solutions that transform businesses and
             drive growth. We believe in the power of technology to solve complex
@@ -549,10 +550,10 @@ export const AboutTop = () => {
           <div className="vision-mission-wrapper-block">
             <div
               className="vision-mission-content-block"
-              style={{ gridRowGap: "10px" }}
+              style={{ gridRowGap: "10px" }} data-aos="fade-up"
             >
               <div className="vision-mission-single-content color-white">
-                <h3 className="vision-mission-title">Excellence</h3>
+                <h3 className="vision-mission-title" >Excellence</h3>
                 <p
                   className="vision-mission-description color-white"
                   style={{

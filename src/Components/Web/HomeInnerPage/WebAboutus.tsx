@@ -10,15 +10,15 @@ export const WebAboutus = () => {
           <div className="about-wrapper">
             <div className="about-inner">
               <div className="section-title-block mw-375px">
-                <div className="section-intro-text">
+                <div className="section-intro-text" data-aos="fade-left">
                   Empowering Your Digital Growth
                 </div>
                 <h2
                   className="section-title "
-                  style={{ color: "var(--white)" }}
+                  style={{ color: "var(--white)" }} data-aos="fade-left"
                 >
                   Innovative digital solutions for
-                  <span className="stoke-text"> business growth</span>
+                  <span className="stoke-text" data-aos="fade-right"> business growth</span>
                 </h2>
               </div>
               <div className="about-content-image left-side image-hover-effect max-width-635px overflow-hidden">
@@ -29,6 +29,7 @@ export const WebAboutus = () => {
                   alt="About Image"
                   className="about-image"
                   style={{ borderRadius: "8px" }}
+                  data-aos="fade-left"
                 />
               </div>
             </div>
@@ -41,13 +42,14 @@ export const WebAboutus = () => {
                   alt="About Image"
                   className="about-image"
                   style={{ borderRadius: "8px" }}
+                  data-aos="fade-right"
                 />
               </div>
-              <p
+              <p data-aos="fade-left"
                 className="section-paragraph"
-                style={{ fontFamily: "Syne", color: "var(--white)" }}
+                style={{ fontFamily: "Syne", color: "var(--white)" }}   
               >
-                <span style={{ color: "var(--coral-primary-color)" }}>
+                <span style={{ color: "var(--coral-primary-color)" }} data-aos="fade-left">
                   Tailored Digital Solutions
                 </span>
                 <br />
