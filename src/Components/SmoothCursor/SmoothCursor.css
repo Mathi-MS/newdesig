@@ -1,4 +1,4 @@
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   * {
     cursor: none !important;
   }
@@ -69,4 +69,4 @@ select,
   .smooth-cursor-trail {
     display: none !important;
   }
-} */
+}

@@ -82,10 +82,9 @@ export const SmoothCursor: React.FC<SmoothCursorProps> = ({
           scale: isHovering ? 1.2 : 1,
         }}
         transition={{
-          type: "spring",
-          stiffness: 500,
-          damping: 28,
-          mass: 0.5,
+          type: "tween",
+          duration: 0,
+          ease: "linear",
         }}
         style={{
           opacity: isVisible ? 1 : 0,
@@ -116,10 +115,9 @@ export const SmoothCursor: React.FC<SmoothCursorProps> = ({
           scale: isHovering ? 0.8 : 1,
         }}
         transition={{
-          type: "spring",
-          stiffness: 200,
-          damping: 20,
-          mass: 0.8,
+          type: "tween",
+          duration: 0,
+          ease: "linear",
         }}
         style={{
           opacity: isVisible ? 0.4 : 0,
@@ -130,3 +128,5 @@ export const SmoothCursor: React.FC<SmoothCursorProps> = ({
 };
 
 export default SmoothCursor;
+
+

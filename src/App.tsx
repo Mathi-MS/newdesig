@@ -23,7 +23,7 @@ const App = () => {
         {showSplash ? <LoaderSplash /> : <RouterProvider router={routes} />}
       </ReactQueryProvider>
       <CustomToast />
-      {/* <SmoothCursor /> */}
+      <SmoothCursor />
     </>
   );
 };

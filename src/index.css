@@ -68,8 +68,8 @@ body .MuiTypography-root {
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgb(194, 193, 193);
-  border-radius: 10px;
+  background:var(--coral-primary-color);
+  border-radius: 200px;
 }
 ::-webkit-scrollbar-thumb:hover {
   opacity: 0.5;
