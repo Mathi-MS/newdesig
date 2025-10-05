@@ -55,6 +55,7 @@ body .MuiTypography-root {
   --white: #fff;
   --black: #000;
   --navy:#1f294a;
+  --radius:8px;
 }
 
 /* Scroll Bar Color Change */

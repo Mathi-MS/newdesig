@@ -15,10 +15,14 @@ export const WebAboutus = () => {
                 </div>
                 <h2
                   className="section-title "
-                  style={{ color: "var(--white)" }} data-aos="fade-left"
+                  style={{ color: "var(--white)" }}
+                  data-aos="fade-left"
                 >
                   Innovative digital solutions for
-                  <span className="stoke-text" data-aos="fade-right"> business growth</span>
+                  <span className="stoke-text" data-aos="fade-right">
+                    {" "}
+                    business growth
+                  </span>
                 </h2>
               </div>
               <div className="about-content-image left-side image-hover-effect max-width-635px overflow-hidden">
@@ -45,11 +49,15 @@ export const WebAboutus = () => {
                   data-aos="fade-right"
                 />
               </div>
-              <p data-aos="fade-left"
+              <p
+                data-aos="fade-left"
                 className="section-paragraph"
-                style={{ fontFamily: "Syne", color: "var(--white)" }}   
+                style={{ fontFamily: "Syne", color: "var(--white)" }}
               >
-                <span style={{ color: "var(--coral-primary-color)" }} data-aos="fade-left">
+                <span
+                  style={{ color: "var(--coral-primary-color)" }}
+                  data-aos="fade-left"
+                >
                   Tailored Digital Solutions
                 </span>
                 <br />
@@ -82,14 +90,17 @@ export const WebAboutus = () => {
                   },
                 }}
               >
-                <Link to="/about" className="button-secondary">
+                <Link
+                  to="/about"
+                  className="button-secondary"
+                  style={{ borderRadius: "var(--radius)" }}
+                >
                   More About Us
                 </Link>
               </Box>
             </div>
           </div>
         </div>
-        
       </div>
     </>
   );

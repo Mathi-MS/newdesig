@@ -29,7 +29,10 @@ export const WebTesti = () => {
       <div className="container service-container w-container">
         <div className="testimonial-wrapper" data-aos="fade-up">
           <div className="testimonial-image-block">
-            <div className="image-hover-effect overflow-hidden">
+            <div
+              className="image-hover-effect overflow-hidden"
+              style={{ borderRadius: "var(--radius)" }}
+            >
               <img
                 src={images.testi}
                 loading="lazy"
@@ -39,7 +42,10 @@ export const WebTesti = () => {
               />
             </div>
             <div className="testimonial-image-content-wrapper">
-              <div className="testimonial-image-content-block block-two">
+              <div
+                className="testimonial-image-content-block block-two"
+                style={{ borderTopLeftRadius: "var(--radius)" }}
+              >
                 <h3 className="testimonial-image-content-title">98+</h3>
                 <h5 className="testimonial-image-content-text">
                   Client Satisfaction
@@ -49,10 +55,12 @@ export const WebTesti = () => {
           </div>
           <div
             className="testimonial-content-block-one"
-            style={{ width: "100%" }} 
+            style={{ width: "100%" }}
           >
             <div className="section-title-block testimonial">
-              <h2 className="section-title" style={{color:"white"}}>What Our Clients Say</h2>
+              <h2 className="section-title" style={{ color: "white" }}>
+                What Our Clients Say
+              </h2>
             </div>
             <div className="testimonial-slider-wrapper testi-block-one">
               <div style={{ position: "relative", overflow: "hidden" }}>

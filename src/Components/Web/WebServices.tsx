@@ -10,14 +10,20 @@ export const WebServices = () => {
         <div className="container service-container w-container">
           <div className="service-section-title-wrapper">
             <div className="section-title-block mw-720px">
-              <div className="section-intro-text" data-aos="fade-up">What We Do</div>
+              <div className="section-intro-text" data-aos="fade-up">
+                What We Do
+              </div>
               <h2 className="section-title" data-aos="fade-up">
                 We deliver end-to-end digital solutions
               </h2>
             </div>
             {location.pathname === "/services" ? null : (
               <div className="section-button-block" data-aos="fade-left">
-                <Link to="/services" className="button-primary">
+                <Link
+                  to="/services"
+                  className="button-primary"
+                  style={{ borderRadius: "var(--radius)" }}
+                >
                   Explore All Services
                 </Link>
               </div>
@@ -27,7 +33,11 @@ export const WebServices = () => {
             <div className="single-service">
               <div className="service-collection-wrapper w-dyn-list">
                 <div role="list" className="service-list w-dyn-items">
-                  <div role="listitem" className="service-item w-dyn-item" data-aos="fade-up">
+                  <div
+                    role="listitem"
+                    className="service-item w-dyn-item"
+                    data-aos="fade-up"
+                  >
                     <div className="service-content-wrapper">
                       <div className="service-icon-block">
                         <img
@@ -83,7 +93,11 @@ export const WebServices = () => {
             <div className="single-service mt-40px">
               <div className="service-collection-wrapper w-dyn-list">
                 <div role="list" className="service-list w-dyn-items">
-                  <div role="listitem" className="service-item w-dyn-item" data-aos="fade-up">
+                  <div
+                    role="listitem"
+                    className="service-item w-dyn-item"
+                    data-aos="fade-up"
+                  >
                     <div className="service-content-wrapper">
                       <div className="service-icon-block">
                         <img
@@ -139,7 +153,11 @@ export const WebServices = () => {
             <div className="single-service mt-80px none">
               <div className="service-collection-wrapper w-dyn-list">
                 <div role="list" className="service-list w-dyn-items">
-                  <div role="listitem" className="service-item w-dyn-item" data-aos="fade-up">
+                  <div
+                    role="listitem"
+                    className="service-item w-dyn-item"
+                    data-aos="fade-up"
+                  >
                     <div className="service-content-wrapper">
                       <div className="service-icon-block">
                         <img
@@ -167,6 +185,176 @@ export const WebServices = () => {
                         </p>
                         <Link
                           to="/graphic-design"
+                          className="service-details-link-block w-inline-block"
+                        >
+                          <div className="details-text">Read More</div>
+                          <div className="service-svg-icon w-embed">
+                            <svg
+                              width="27"
+                              height="27"
+                              viewBox="0 0 27 27"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M3.19178 7.78083V1.13699V1H25.9315L26 23.8082H19.0137V12.6438L5.72603 25.9315L1 21.2055L14.2192 7.78083H3.19178Z"
+                                stroke="currentColor"
+                              />
+                            </svg>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="service-wrapper">
+            <div className="single-service">
+              <div className="service-collection-wrapper w-dyn-list">
+                <div role="list" className="service-list w-dyn-items">
+                  <div
+                    role="listitem"
+                    className="service-item w-dyn-item"
+                    data-aos="fade-up"
+                  >
+                    <div className="service-content-wrapper">
+                      <div className="service-icon-block">
+                        <img
+                          alt="Service Icon"
+                          loading="lazy"
+                          src={images.servicesImageThree}
+                          className="service-icon"
+                        />
+                      </div>
+                      <div className="service-content-block">
+                        <Link
+                          to="/graphic-design"
+                          className="service-title-block w-inline-block"
+                        >
+                          <h3 className="service-title">Web Design</h3>
+                        </Link>
+                        <p
+                          className="service-summary"
+                          style={{ fontFamily: "Syne", fontSize: "14px" }}
+                        >
+                          We're the most prominent and creative web designing company,known for our innovation,quality and efficiency in delivering cutting-edge digital solutions.
+                        </p>
+                        <Link
+                          to="/graphic-design"
+                          className="service-details-link-block w-inline-block"
+                        >
+                          <div className="details-text">Read More</div>
+                          <div className="service-svg-icon w-embed">
+                            <svg
+                              width="27"
+                              height="27"
+                              viewBox="0 0 27 27"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M3.19178 7.78083V1.13699V1H25.9315L26 23.8082H19.0137V12.6438L5.72603 25.9315L1 21.2055L14.2192 7.78083H3.19178Z"
+                                stroke="currentColor"
+                              />
+                            </svg>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="single-service mt-40px">
+              <div className="service-collection-wrapper w-dyn-list">
+                <div role="list" className="service-list w-dyn-items">
+                  <div
+                    role="listitem"
+                    className="service-item w-dyn-item"
+                    data-aos="fade-up"
+                  >
+                    <div className="service-content-wrapper">
+                      <div className="service-icon-block">
+                        <img
+                          alt="Service Icon"
+                          loading="lazy"
+                          src={images.servicesImageone}
+                          className="service-icon"
+                        />
+                      </div>
+                      <div className="service-content-block">
+                        <Link
+                          to="/web-development"
+                          className="service-title-block w-inline-block"
+                        >
+                          <h3 className="service-title">CMS</h3>
+                        </Link>
+                        <p
+                          className="service-summary"
+                          style={{ fontFamily: "Syne", fontSize: "14px" }}
+                        >
+                          We build custom CMS websites that make content management effortless. Designed for flexibility, security, and scalability, our solutions let you easily update pages, media, and data through an intuitive interface—keeping your website dynamic and aligned with your business goals.
+                        </p>
+                        <Link
+                          to="/web-development"
+                          className="service-details-link-block w-inline-block"
+                        >
+                          <div className="details-text">Read More</div>
+                          <div className="service-svg-icon w-embed">
+                            <svg
+                              width="27"
+                              height="27"
+                              viewBox="0 0 27 27"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M3.19178 7.78083V1.13699V1H25.9315L26 23.8082H19.0137V12.6438L5.72603 25.9315L1 21.2055L14.2192 7.78083H3.19178Z"
+                                stroke="currentColor"
+                              />
+                            </svg>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="single-service mt-80px none">
+              <div className="service-collection-wrapper w-dyn-list">
+                <div role="list" className="service-list w-dyn-items">
+                  <div
+                    role="listitem"
+                    className="service-item w-dyn-item"
+                    data-aos="fade-up"
+                  >
+                    <div className="service-content-wrapper">
+                      <div className="service-icon-block">
+                        <img
+                          alt="Service Icon"
+                          loading="lazy"
+                          src={images.servicesImageTwo}
+                          className="service-icon"
+                        />
+                      </div>
+                      <div className="service-content-block">
+                        <Link
+                          to="/web-development"
+                          className="service-title-block w-inline-block"
+                        >
+                          <h3 className="service-title">E-Commerce</h3>
+                        </Link>
+                        <p
+                          className="service-summary"
+                          style={{ fontFamily: "Syne", fontSize: "14px" }}
+                        >
+                          With ecommerce we give you a perfect and safe shopping experience for your clients along with increased sales for your physical business.
+                        </p>
+                        <Link
+                          to="/web-development"
                           className="service-details-link-block w-inline-block"
                         >
                           <div className="details-text">Read More</div>

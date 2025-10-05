@@ -86,7 +86,7 @@ export const ContactPage = () => {
         <div className="container service-container w-container">
           <div className="section-title-center"></div>
           <div className="contact-page-wrapper">
-            <div className="contact-page-info-block">
+            <div className="contact-page-info-block" style={{borderRadius: "var(--radius)"}}>
               <div className="contact-page-info-top-block">
                 <h2 className="contact-page-info-title">
                   contact
@@ -252,7 +252,7 @@ export const ContactPage = () => {
                 </div>
               </div>
             </div>
-            <div className="contact-page-form-block">
+            <div className="contact-page-form-block" style={{borderRadius: "var(--radius)"}}>
               <div className="contact-form-inner">
                 <div className="contact-form-block">
                   <div className="form-block-wrapper w-form">
@@ -397,6 +397,7 @@ export const ContactPage = () => {
                         className="button-primary contact-button w-button"
                         value={loading ? "Sending..." : "Send Message"}
                         disabled={loading}
+                        style={{borderRadius: "var(--radius)"}}
                       />
                     </form>
                     <div className="w-form-done">

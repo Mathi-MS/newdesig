@@ -57,17 +57,18 @@ export const AboutTop = () => {
       >
         <div className="faq-container container service-container w-container" data-aos="fade-up">
           <div className="faq-container-inner">
-            <div className="faq-image-block">
+            <div className="faq-image-block" style={{borderRadius: "var(--radius)"}}>
               <img
                 src={images.faq}
                 loading="lazy"
                 sizes="(max-width: 991px) 75vw, (max-width: 1279px) 630px, (max-width: 1439px) 723px, (max-width: 1919px) 715px, 875px"
                 alt="FAQ Image "
                 className="faq-image"
+                style={{borderRadius: "var(--radius)"}}
               />
             </div>
             <div className="faq-content-block">
-              <div className="faq-content-inner">
+              <div className="faq-content-inner" style={{borderRadius: "var(--radius)"}}>
                 <div className="section-title-block max-w-620">
                   <div className="section-intro-text" >FAQ’s</div>
                   <h2 className="section-title small-title" style={{color:"var(--white)"}} >Our Answers</h2>
@@ -645,13 +646,14 @@ export const AboutTop = () => {
                 </p>
               </div>
             </div>
-            <div className="vision-mission-image-block">
+            <div className="vision-mission-image-block" style={{borderRadius: "var(--radius)"}}>
               <img
                 src={images.vision}
                 loading="lazy"
                 sizes="(max-width: 479px) 94vw, (max-width: 621px) 95vw, (max-width: 991px) 590px, (max-width: 1279px) 446px, 590px"
                 alt="Vision Mission Image"
                 className="vision-mission-image"
+                style={{borderRadius: "var(--radius)"}}
               />
             </div>
           </div>

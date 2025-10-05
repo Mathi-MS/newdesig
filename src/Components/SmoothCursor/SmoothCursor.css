@@ -1,11 +1,9 @@
-/* Hide default cursor on desktop */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   * {
     cursor: none !important;
   }
 }
 
-/* Arrow cursor styles */
 .smooth-cursor-arrow {
   position: fixed;
   top: 0;
@@ -19,7 +17,6 @@
   filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.8));
 }
 
-/* Trailing cursor styles */
 .smooth-cursor-trail {
   position: fixed;
   top: 0;
@@ -33,7 +30,6 @@
   transition: opacity 0.2s ease;
 }
 
-/* Dark theme variant */
 @media (prefers-color-scheme: dark) {
   .smooth-cursor-arrow {
     color: var(--coral-primary-color);
@@ -45,7 +41,6 @@
   }
 }
 
-/* Custom cursor variants */
 .smooth-cursor-arrow.accent {
   color: #007bff;
   filter: drop-shadow(0 0 4px rgba(0, 123, 255, 0.5));
@@ -55,7 +50,6 @@
   background: rgba(0, 123, 255, 0.6);
 }
 
-/* Ensure cursor is visible on interactive elements */
 a,
 button,
 input,
@@ -66,7 +60,6 @@ select,
   position: relative;
 }
 
-/* Mobile devices - show default cursor */
 @media (max-width: 767px) {
   * {
     cursor: auto !important;
@@ -76,4 +69,4 @@ select,
   .smooth-cursor-trail {
     display: none !important;
   }
-}
+} */

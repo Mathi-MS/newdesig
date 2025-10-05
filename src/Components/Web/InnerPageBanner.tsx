@@ -86,6 +86,7 @@ export const InnerPageBanner = () => {
                         padding: "15px 25px",
                         border: "solid 1px var(--coral-primary-color)",
                         ":hover": { color: "var(--coral-primary-color)" },
+                        borderRadius: "var(--radius)"
                       }}
                       className="button-primary"
                     >
