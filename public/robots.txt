@@ -1,0 +1,20 @@
+# robots.txt for Design Dynasty
+
+User-agent: *
+Allow: /
+
+# Disallow admin and auth pages
+Disallow: /login
+Disallow: /signup
+Disallow: /signup-confirm
+Disallow: /forget-password
+Disallow: /reset-password
+Disallow: /dashboard
+Disallow: /users
+Disallow: /timeout
+
+# Sitemap location
+Sitemap: https://designdynasty.com/sitemap.xml
+
+# Crawl-delay (optional, adjust as needed)
+Crawl-delay: 1

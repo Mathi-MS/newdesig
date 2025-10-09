@@ -1,72 +1,59 @@
-@media (min-width: 768px) {
+/* Hide default cursor on desktop */
+@media (min-width: 1025px) {
   * {
     cursor: none !important;
   }
 }
 
-.smooth-cursor-arrow {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 16px;
-  height: 16px;
-  pointer-events: none;
-  z-index: 9999999999999999999999;
-  transition: opacity 0.2s ease;
-  color: #000;
-  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.8));
-}
-
-.smooth-cursor-trail {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 4px;
-  background: rgba(0, 0, 0, 0.4);
+/* Cursor Dot - Inner small dot */
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary, #ff7425);
   border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
   pointer-events: none;
-  z-index: 9998;
-  transition: opacity 0.2s ease;
+  z-index: 999999999999999999999999999999999999999999999999999999999999999999;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  .smooth-cursor-arrow {
-    color: var(--coral-primary-color);
-    filter: drop-shadow(0 0 4px rgba(255, 117, 37, 0.8));
-  }
-
-  .smooth-cursor-trail {
-    background: var(--coral-primary-color);
-  }
+/* Cursor Outline - Outer circle with trailing effect */
+.cursor-outline {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--primary, #ff7425);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 999999999999999999999999999999999999999999999999999999999999999998;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease,
+    background-color 0.3s ease;
 }
 
-.smooth-cursor-arrow.accent {
-  color: #007bff;
-  filter: drop-shadow(0 0 4px rgba(0, 123, 255, 0.5));
+/* Hover state - when hovering over interactive elements */
+.cursor-dot.hovering {
+  width: 0px;
+  height: 0px;
+  background-color: var(--primary, #ff7425);
 }
 
-.smooth-cursor-trail.accent {
-  background: rgba(0, 123, 255, 0.6);
+.cursor-outline.hovering {
+  width: 60px;
+  height: 60px;
+  border-color: var(--primary, #ff7425);
+  background-color: rgba(255, 116, 37, 0.1);
 }
 
-a,
-button,
-input,
-textarea,
-select,
-[role="button"],
-.cursor-pointer {
-  position: relative;
-}
-
-@media (max-width: 767px) {
-  * {
-    cursor: auto !important;
-  }
-
-  .smooth-cursor-arrow,
-  .smooth-cursor-trail {
-    display: none !important;
-  }
+/* Ensure cursor is visible when mouse enters the page */
+body:hover .cursor-dot,
+body:hover .cursor-outline {
+  opacity: 1;
 }

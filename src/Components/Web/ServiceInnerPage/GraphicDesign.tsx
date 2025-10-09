@@ -1,5 +1,7 @@
 import { GraphicDesignBanner } from "./GraphicDesignBanner";
 import { GraphicDesignContent } from "./GraphicDesignContent";
+import { SEO } from "../../SEO";
+import { seoConfig } from "../../SEO/seoConfig";
 import AOS from "aos";
 import { useEffect } from "react";
 
@@ -11,8 +13,18 @@ export const GraphicDesign = () => {
       offset: 100,     // trigger offset
     });
   }, []);
+
+  const graphicDesignData = seoConfig.pages.graphicDesign;
+
   return (
     <>
+      <SEO
+        title={graphicDesignData.title}
+        description={graphicDesignData.description}
+        keywords={graphicDesignData.keywords}
+        url={`${seoConfig.siteUrl}/#/graphic-design`}
+        structuredData={graphicDesignData.structuredData}
+      />
       <GraphicDesignBanner />
       <GraphicDesignContent />
     </>

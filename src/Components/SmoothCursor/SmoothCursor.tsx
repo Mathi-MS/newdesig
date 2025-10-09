@@ -1,132 +1,134 @@
-import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 import "./SmoothCursor.css";
 
-interface SmoothCursorProps {
-  className?: string;
-}
-
-export const SmoothCursor: React.FC<SmoothCursorProps> = ({
-  className = "",
-}) => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isVisible, setIsVisible] = useState(false);
+const SmoothCursor = () => {
+  const cursorDotRef = useRef<HTMLDivElement>(null);
+  const cursorOutlineRef = useRef<HTMLDivElement>(null);
   const [isHovering, setIsHovering] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const updateMousePosition = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-      if (!isVisible) setIsVisible(true);
+    // Check if device is mobile/tablet
+    const checkMobile = () => {
+      const mobile =
+        window.matchMedia("(max-width: 1024px)").matches ||
+        "ontouchstart" in window ||
+        navigator.maxTouchPoints > 0;
+      setIsMobile(mobile);
     };
 
-    const handleMouseEnter = () => setIsVisible(true);
-    const handleMouseLeave = () => setIsVisible(false);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
 
-    // Add hover effects for interactive elements
-    const handleElementHover = (isHover: boolean) => {
-      setIsHovering(isHover);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) return;
+
+    const cursorDot = cursorDotRef.current;
+    const cursorOutline = cursorOutlineRef.current;
+
+    if (!cursorDot || !cursorOutline) return;
+
+    let mouseX = 0;
+    let mouseY = 0;
+    let outlineX = 0;
+    let outlineY = 0;
+
+    const handleMouseMove = (e: MouseEvent) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+
+      // Move dot immediately (normal cursor speed)
+      cursorDot.style.left = `${mouseX}px`;
+      cursorDot.style.top = `${mouseY}px`;
     };
 
+    const handleMouseEnter = () => {
+      cursorDot.style.opacity = "1";
+      cursorOutline.style.opacity = "1";
+    };
+
+    const handleMouseLeave = () => {
+      cursorDot.style.opacity = "0";
+      cursorOutline.style.opacity = "0";
+    };
+
+    // Animate outline with smooth trailing effect
+    const animateOutline = () => {
+      // Smooth interpolation for trailing effect
+      outlineX += (mouseX - outlineX) * 0.15;
+      outlineY += (mouseY - outlineY) * 0.15;
+
+      cursorOutline.style.left = `${outlineX}px`;
+      cursorOutline.style.top = `${outlineY}px`;
+
+      requestAnimationFrame(animateOutline);
+    };
+
+    // Add hover effect for interactive elements
     const addHoverListeners = () => {
       const interactiveElements = document.querySelectorAll(
-        'a, button, input, textarea, select, [role="button"], .cursor-pointer'
+        'a, button, input, textarea, select, [role="button"], .clickable, .MuiButton-root, .MuiIconButton-root'
       );
 
-      interactiveElements.forEach((element) => {
-        element.addEventListener("mouseenter", () => handleElementHover(true));
-        element.addEventListener("mouseleave", () => handleElementHover(false));
+      interactiveElements.forEach((el) => {
+        el.addEventListener("mouseenter", handleElementHover);
+        el.addEventListener("mouseleave", handleElementLeave);
       });
     };
 
-    // Initial setup
+    const handleElementHover = () => {
+      setIsHovering(true);
+    };
+
+    const handleElementLeave = () => {
+      setIsHovering(false);
+    };
+
+    // Initialize
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseenter", handleMouseEnter);
+    document.addEventListener("mouseleave", handleMouseLeave);
+
     addHoverListeners();
+    animateOutline();
 
-    // Set up observers for dynamically added elements
-    const observer = new MutationObserver(() => {
-      addHoverListeners();
-    });
-
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true,
-    });
-
-    window.addEventListener("mousemove", updateMousePosition);
-    window.addEventListener("mouseenter", handleMouseEnter);
-    window.addEventListener("mouseleave", handleMouseLeave);
+    // Re-add listeners when DOM changes (for dynamically added elements)
+    const observer = new MutationObserver(addHoverListeners);
+    observer.observe(document.body, { childList: true, subtree: true });
 
     return () => {
-      window.removeEventListener("mousemove", updateMousePosition);
-      window.removeEventListener("mouseenter", handleMouseEnter);
-      window.removeEventListener("mouseleave", handleMouseLeave);
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseenter", handleMouseEnter);
+      document.removeEventListener("mouseleave", handleMouseLeave);
       observer.disconnect();
-    };
-  }, [isVisible]);
 
-  // Hide on mobile devices
-  const isMobile =
-    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-      navigator.userAgent
-    );
+      const interactiveElements = document.querySelectorAll(
+        'a, button, input, textarea, select, [role="button"], .clickable, .MuiButton-root, .MuiIconButton-root'
+      );
+      interactiveElements.forEach((el) => {
+        el.removeEventListener("mouseenter", handleElementHover);
+        el.removeEventListener("mouseleave", handleElementLeave);
+      });
+    };
+  }, [isMobile]);
 
   if (isMobile) return null;
 
   return (
     <>
-      {/* Arrow cursor */}
-      <motion.div
-        className={`smooth-cursor-arrow ${className}`}
-        animate={{
-          x: mousePosition.x,
-          y: mousePosition.y,
-          scale: isHovering ? 1.2 : 1,
-        }}
-        transition={{
-          type: "tween",
-          duration: 0,
-          ease: "linear",
-        }}
-        style={{
-          opacity: isVisible ? 1 : 0,
-        }}
-      >
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 16 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M2 2L14 8L8 8.5L6 14L2 2Z"
-            fill="currentColor"
-            stroke="rgba(255, 255, 255, 0.8)"
-            strokeWidth="0.5"
-          />
-        </svg>
-      </motion.div>
-
-      {/* Trailing dot */}
-      <motion.div
-        className={`smooth-cursor-trail ${className}`}
-        animate={{
-          x: mousePosition.x - 2,
-          y: mousePosition.y - 2,
-          scale: isHovering ? 0.8 : 1,
-        }}
-        transition={{
-          type: "tween",
-          duration: 0,
-          ease: "linear",
-        }}
-        style={{
-          opacity: isVisible ? 0.4 : 0,
-        }}
+      <div
+        ref={cursorDotRef}
+        className={`cursor-dot ${isHovering ? "hovering" : ""}`}
+      />
+      <div
+        ref={cursorOutlineRef}
+        className={`cursor-outline ${isHovering ? "hovering" : ""}`}
       />
     </>
   );
 };
 
 export default SmoothCursor;
-
-

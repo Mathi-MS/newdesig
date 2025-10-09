@@ -1,0 +1,11 @@
+# Netlify redirects for SPA (Single Page Application)
+# This ensures all routes are handled by React Router
+
+/*    /index.html   200
+
+# Force HTTPS (optional, Netlify does this by default)
+# http://* https://:splat 301!
+
+# Redirect old URLs (examples)
+# /old-page    /new-page    301
+# /blog/*      /news/:splat 301

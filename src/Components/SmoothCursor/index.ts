@@ -1,1 +1,1 @@
-export { SmoothCursor, default } from "./SmoothCursor";
+export { default } from "./SmoothCursor";

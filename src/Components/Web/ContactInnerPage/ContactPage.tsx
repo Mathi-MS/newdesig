@@ -7,10 +7,14 @@ import { Link, useLocation } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import { showError, showSuccess } from "../../../Custom/CustomToast";
+import { SEO } from "../../SEO";
+import { seoConfig } from "../../SEO/seoConfig";
 
 export const ContactPage = () => {
   const location = useLocation();
   console.log(location);
+
+  const contactData = seoConfig.pages.contact;
 
   const schema = z.object({
     name: z
@@ -76,6 +80,13 @@ export const ContactPage = () => {
     <>
       {location.pathname === "/contact" && (
         <>
+          <SEO
+            title={contactData.title}
+            description={contactData.description}
+            keywords={contactData.keywords}
+            url={`${seoConfig.siteUrl}/#/contact`}
+            structuredData={contactData.structuredData}
+          />
           <InnerPageBanner />
         </>
       )}
@@ -86,7 +97,10 @@ export const ContactPage = () => {
         <div className="container service-container w-container">
           <div className="section-title-center"></div>
           <div className="contact-page-wrapper">
-            <div className="contact-page-info-block" style={{borderRadius: "var(--radius)"}}>
+            <div
+              className="contact-page-info-block"
+              style={{ borderRadius: "var(--radius)" }}
+            >
               <div className="contact-page-info-top-block">
                 <h2 className="contact-page-info-title">
                   contact
@@ -252,7 +266,10 @@ export const ContactPage = () => {
                 </div>
               </div>
             </div>
-            <div className="contact-page-form-block" style={{borderRadius: "var(--radius)"}}>
+            <div
+              className="contact-page-form-block"
+              style={{ borderRadius: "var(--radius)" }}
+            >
               <div className="contact-form-inner">
                 <div className="contact-form-block">
                   <div className="form-block-wrapper w-form">
@@ -397,7 +414,7 @@ export const ContactPage = () => {
                         className="button-primary contact-button w-button"
                         value={loading ? "Sending..." : "Send Message"}
                         disabled={loading}
-                        style={{borderRadius: "var(--radius)"}}
+                        style={{ borderRadius: "var(--radius)" }}
                       />
                     </form>
                     <div className="w-form-done">

@@ -5,7 +5,8 @@ import routes from "./Routes/Routes";
 import { RouterProvider } from "react-router-dom";
 import { useEffect, useState } from "react";
 import LoaderSplash from "./Components/LoaderSplash";
-import { SmoothCursor } from "./Components/SmoothCursor";
+import { HelmetProvider } from "react-helmet-async";
+import SmoothCursor from "./Components/SmoothCursor";
 import "aos/dist/aos.css";
 
 const App = () => {
@@ -19,11 +20,13 @@ const App = () => {
 
   return (
     <>
-      <ReactQueryProvider>
-        {showSplash ? <LoaderSplash /> : <RouterProvider router={routes} />}
-      </ReactQueryProvider>
-      <CustomToast />
-      <SmoothCursor />
+      <HelmetProvider>
+        <ReactQueryProvider>
+          {showSplash ? <LoaderSplash /> : <RouterProvider router={routes} />}
+        </ReactQueryProvider>
+        <CustomToast />
+        <SmoothCursor />
+      </HelmetProvider>
     </>
   );
 };
